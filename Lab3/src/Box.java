@@ -4,7 +4,7 @@ public class Box {
 	public static void main(String[] args) {
 
 		// initialize variable size
-		int size = 7;
+		int size = 5;
 
 		// invoke printBox method
 		printBox(size);
