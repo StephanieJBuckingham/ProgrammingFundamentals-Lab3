@@ -8,7 +8,7 @@ public class AgeGuess {
 		// Create random integer age
 		int Age;
 		Random gen = new Random();
-		Age = gen.nextInt(100);
+		Age = gen.nextInt(101);
 
 		// Scan in age guess
 		int AgeGuess;
