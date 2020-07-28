@@ -1,23 +1,22 @@
 
 public class Box {
 
-	//initialize variable 
+	// initialize variable
 	public int size = 0;
 
-		 public static void main(String[] args) {
+	public static void main(String[] args) {
 
-		      // Create box 
-		      Box box = new Box();
+		// Create box
+		Box box = new Box();
 
-		      // Set box to 5
-		      box.size = 5;
+		// Set box to 5
+		box.size = 5;
 
-		      // Call print box method on our box object.
-		      box.printBox();
-		   }
-		
-	
-	// create method printBox
+		// Call printBox method on our box object
+		box.printBox();
+	}
+
+	// create method printBox 
 	private void printBox() {
 
 		// for loop to create star rectangle
