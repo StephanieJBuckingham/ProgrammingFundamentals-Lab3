@@ -1,33 +1,36 @@
 
 public class Box {
 
-	public static void main(String[] args) {
+	//initialize variable 
+	public int size = 0;
 
-		// initialize variable size
-		int size = 5;
+		 public static void main(String[] args) {
 
-		// invoke printBox method
-		printBox(size);
+		      // Create box 
+		      Box box = new Box();
 
-	}
+		      // Set box to 5
+		      box.size = 5;
 
+		      // Call print box method on our box object.
+		      box.printBox();
+		   }
+		
+	
 	// create method printBox
-	private static void printBox(int size) {
-
-		// initialize variables for row and column
-		int j;
-		int i;
+	private void printBox() {
 
 		// for loop to create star rectangle
-		for (i = 1; i <= size; i++) {
+		for (int i = 0; i < size; i++) {
+			{
+				for (int j = 0; j < size; j++) {
 
-			for (j = 1; j <= size; j++) {
+					System.out.print('*');
+				}
+				System.out.print("\n");
 
-				System.out.print('*');
 			}
-			System.out.print("\n");
-
 		}
-
 	}
 }
+
