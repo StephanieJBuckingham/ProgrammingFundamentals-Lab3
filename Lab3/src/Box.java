@@ -1,7 +1,7 @@
 
 public class Box {
 
-	// initialize variable
+	// initialize size variable
 	public int size = 0;
 
 	public static void main(String[] args) {
@@ -9,17 +9,20 @@ public class Box {
 		// Create box
 		Box box = new Box();
 
-		// Set box to 5
+		// Set box size to 5
 		box.size = 5;
 
-		// Call printBox method on our box object
+		// Call printBox methods on our box object
 		box.printBox();
-	}
+		System.out.println();
+		box.printBox('c');
 
-	// create method printBox 
+	}
+	
+	//printBox method print star box 
 	private void printBox() {
 
-		// for loop to create star rectangle
+		//Nested for loops to create star rectangle
 		for (int i = 0; i < size; i++) {
 			{
 				for (int j = 0; j < size; j++) {
@@ -31,5 +34,21 @@ public class Box {
 			}
 		}
 	}
-}
 
+	//printBox Method to create c box 
+	private void printBox(char c) {
+
+		// Nested for loops to create c rectangle
+		for (int i = 0; i < size; i++) {
+			{
+				for (int j = 0; j < size; j++) {
+
+					System.out.print('c');
+				}
+				System.out.print("\n");
+
+			}
+
+		}
+	}
+}
